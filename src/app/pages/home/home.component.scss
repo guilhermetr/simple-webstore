@@ -1,10 +1,24 @@
 .product-grid {
     padding: 2.5rem 8rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;    
+}
+
+@media screen and (max-width: 1023px) {
+    .product-grid {
+        padding: 2.5rem 5.3rem;
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .product-grid {
+        padding: 2.5rem 2.5rem;
+        grid-template-columns: minmax(200px, 1fr);
+    }
 }
 
 .content-container {

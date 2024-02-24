@@ -10,7 +10,6 @@ import { ProductService } from 'src/app/services/product.service';
 export class HomeComponent implements OnInit {
 
   products!: Product[];
-  cols: number = 3;
   colspans: number[] = [];
 
   constructor(private productService: ProductService) {}
@@ -22,9 +21,4 @@ export class HomeComponent implements OnInit {
   onCalculatedColspan(colspan: number, index: number) {
     this.colspans[index] = colspan;
   }
-
-  getGridColumnEnd(index: number): string {
-    return `span ${this.colspans[index]}`;
-  }
-
 }

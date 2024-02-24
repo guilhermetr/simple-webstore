@@ -2,7 +2,7 @@
     <div         
         *ngFor="let product of products; let i = index"
         class="content-container" 
-        [style.grid-column-end]="getGridColumnEnd(i)">
+        [style.grid-column]="colspans[i] > 1 ? '1/-1' : ''">
     <app-product-details
         [product]="product"
         (calculatedColspan)="onCalculatedColspan($event, i)">
