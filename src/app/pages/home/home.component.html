@@ -5,7 +5,8 @@
         [style.grid-column]="colspans[i] > 1 ? '1/-1' : ''">
     <app-product-details
         [product]="product"
-        (calculatedColspan)="onCalculatedColspan($event, i)">
+        (calculatedColspan)="onCalculatedColspan($event, i)"
+        style="height: 100%;">
     </app-product-details>
     </div>
 </div>

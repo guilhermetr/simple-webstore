@@ -2,8 +2,16 @@
     padding: 10px;
     text-align: center;
     display: flex;
+    flex-direction: column;    
+    height: 100%; 
+}
+
+.text-info {
+    display: flex;
     flex-direction: column;
-    width: fit-content;
+    justify-content: space-between;
+    align-items: center;    
+    height: 100%;
 }
 
 img {
@@ -12,19 +20,41 @@ img {
   }
 
 .name {
-    margin-top: 5px;
+    margin-top: 6px;
     margin-bottom: 0;
+}
+
+.hero {
+    margin: 0;
+    color: orangered;
+}
+
+.detail {
+    margin: 0;    
+}
+
+.info {
+    max-width: 200px; 
 }
 
 .bottom-row {
     display: flex; 
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    width: 100%;
+    margin-top: 2px;
 }
 
 .price {
     font-weight: bold;
     font-size: large;    
+}
+
+.offer {
+    font-size: 12px;
+    font-weight: bold;
+    color: green;
+    margin-left: 5px;
 }
 
 .cart-btn {

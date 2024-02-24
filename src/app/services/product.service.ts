@@ -17,7 +17,9 @@ export class ProductService {
         name: product.name,
         detail: product.detail,
         price: parseFloat(product.price),
-        hero: product.hero || '',
+        hero: product.hero,
+        info: product.info,
+        offer: product.offer,
         imageUrl: product.image
       };
     });
