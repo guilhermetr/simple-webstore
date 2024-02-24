@@ -1,0 +1,40 @@
+.card {    
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+.name {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.bottom-row {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.price {
+    font-weight: bold;
+    font-size: large;    
+}
+
+.cart-btn {
+    color: darkblue;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.cart-btn:hover {
+    color: rgb(0, 0, 255);
+}

@@ -1,0 +1,11 @@
+<div class="product-grid">
+    <div         
+        *ngFor="let product of products; let i = index"
+        class="content-container" 
+        [style.grid-column-end]="getGridColumnEnd(i)">
+    <app-product-details
+        [product]="product"
+        (calculatedColspan)="onCalculatedColspan($event, i)">
+    </app-product-details>
+    </div>
+</div>
