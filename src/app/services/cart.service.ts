@@ -22,10 +22,10 @@ export class CartService {
       itemInCart.quantity += 1;
     } else {
       items.push(item);
+      this.openSnackBar(`"${item.product.name}" added to cart`);
     }
 
-    this.cart.next({ items });
-    this.openSnackBar(`"${item.product.name}" added to cart`);
+    this.cart.next({ items });    
   }
 
   removeFromCart(item: CartItem, updateCart = true): CartItem[] {
@@ -57,10 +57,10 @@ export class CartService {
 
     if (itemForRemoval) {
       filteredItems = this.removeFromCart(itemForRemoval, false);
+      this.openSnackBar(`"${item.product.name}" removed from cart`);
     }
 
     this.cart.next({ items: filteredItems });
-    this.openSnackBar(`"${item.product.name}" removed from cart`);
   }
 
   openSnackBar(message: string) {
