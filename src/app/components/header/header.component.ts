@@ -24,8 +24,4 @@ export class HeaderComponent implements OnInit{
   getItemsPrice(items: CartItem[]): number {
     return this.cartService.getItemsPrice(items);
   }
-
-  onClearCart(): void {
-    this.cartService.clearCart();
-  }
 }

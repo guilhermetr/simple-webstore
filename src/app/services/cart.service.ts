@@ -63,11 +63,6 @@ export class CartService {
     this.openSnackBar(`"${item.product.name}" removed from cart`);
   }
 
-  clearCart(): void {
-    this.cart.next({ items: [] });
-    this.openSnackBar('Cart cleared')
-  }
-
   openSnackBar(message: string) {
     this._snackBar.open(message, undefined, {
       duration: 2000,

@@ -1,0 +1,121 @@
+.table-container {
+    padding: 8rem 15%;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 560px) {
+    .table-container {
+        padding: 8rem 0.6rem;
+    }
+
+    .top-bar {
+        padding: 0 5px !important;
+    }
+
+    .checkout-btn {
+        padding: 0 5px;
+    }
+
+    .title {
+        font-size: 22px !important;
+    }
+
+    img {
+        min-width: 50px !important;
+    }
+
+    td {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 80px;        
+}
+
+.title {
+    font-size: 28px ;
+    margin: 0 4px !important;
+}
+
+.home-btn {        
+    transform:scale(1.2);
+}
+
+.checkout-btn {
+    height: 60%;
+    font-size: 16px;
+}
+
+.bottom-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    height: 80px;    
+}
+
+.table, .top-bar, .bottom-bar {    
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);    
+}
+
+.info-cell {
+    width: 60%;
+}
+
+.product-info {
+    text-align: left;
+    padding-bottom: 5px;
+
+    h2 {
+        margin-bottom: 5px;
+    }
+}
+
+.actions-row {
+    display: flex;
+    align-items: center;    
+}
+
+.quantity-btn {
+    padding: 0;
+    height: 24px;
+    width: 24px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+h2, h1 {        
+    margin: 0;
+}
+
+td, th {
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    vertical-align: top;
+}
+
+img {
+    max-width: 100%;
+    min-width: 100px;
+}
