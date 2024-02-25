@@ -14,6 +14,7 @@ export class ProductDetailsComponent implements OnInit{
 
   colspan: number = 1;
   @Output() calculatedColspan = new EventEmitter<number>();
+  @Output() addedToCart = new EventEmitter();
 
   constructor() {}
 
@@ -23,5 +24,9 @@ export class ProductDetailsComponent implements OnInit{
     const imageWidth = (event.target as HTMLImageElement).naturalWidth;
     this.colspan = Math.ceil(imageWidth / MAX_COLUMN_WIDTH);
     this.calculatedColspan.emit(this.colspan);
+  }
+
+  addToCart() {
+    this.addedToCart.emit(this.product);
   }
 }
