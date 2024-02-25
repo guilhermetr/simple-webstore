@@ -6,6 +6,7 @@
     <app-product-details
         [product]="product"
         (calculatedColspan)="onCalculatedColspan($event, i)"
+        (addedToCart)="onAddToCart($event)"
         style="height: 100%;">
     </app-product-details>
     </div>

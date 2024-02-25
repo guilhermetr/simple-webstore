@@ -12,7 +12,7 @@
             <span class="price">{{ product.price | currency }}</span>
             <span class="offer">{{ product.offer }}</span>
           </div>          
-          <button class="cart-btn">
+          <button class="cart-btn" (click)="addToCart()">
             <mat-icon>shopping_cart</mat-icon>
           </button>
         </div>
